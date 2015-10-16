@@ -6,9 +6,10 @@
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:text="collection" />
+        android:layout_height="wrap_content"
+        android:text="collection"
+        android:textSize="50sp"
+        android:gravity="center"/>
 
     <TableLayout
         android:layout_width="wrap_content"
@@ -17,153 +18,417 @@
         android:layout_gravity="center">
 
         <TableRow>
-
+            <LinearLayout android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/border">
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@mipmap/ic_launcher"
-                android:background="@drawable/border"
                 android:paddingLeft="10dp"
                 android:paddingRight="10dp"/>
-            <ImageView
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" ???"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+            <LinearLayout android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@mipmap/ic_launcher"
-                android:background="@drawable/border"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"/>
-            <ImageView
+                android:orientation="vertical"
+                android:background="@drawable/border">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_launcher"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" ???"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+            <LinearLayout android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@mipmap/ic_launcher"
-                android:background="@drawable/border"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"/>
-            <ImageView
+                android:orientation="vertical"
+                android:background="@drawable/border">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_launcher"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" ???"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+            <LinearLayout android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@mipmap/ic_launcher"
-                android:background="@drawable/border"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"/>
-            <ImageView
+                android:orientation="vertical"
+                android:background="@drawable/border">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_launcher"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" ???"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+            <LinearLayout android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@mipmap/ic_launcher"
-                android:background="@drawable/border"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"/>
+                android:orientation="vertical"
+                android:background="@drawable/border">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_launcher"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" ???"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
         </TableRow>
         <TableRow>
-            <ImageView
+            <LinearLayout android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@mipmap/ic_launcher"
-                android:background="@drawable/border"/>
-            <ImageView
+                android:orientation="vertical"
+                android:background="@drawable/border">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_launcher"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" ???"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+            <LinearLayout android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@mipmap/ic_launcher"
-                android:background="@drawable/border"/>
-            <ImageView
+                android:orientation="vertical"
+                android:background="@drawable/border">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_launcher"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" ???"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+            <LinearLayout android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@mipmap/ic_launcher"
-                android:background="@drawable/border"/>
-            <ImageView
+                android:orientation="vertical"
+                android:background="@drawable/border">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_launcher"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" ???"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+            <LinearLayout android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@mipmap/ic_launcher"
-                android:background="@drawable/border"/>
-            <ImageView
+                android:orientation="vertical"
+                android:background="@drawable/border">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_launcher"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" ???"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+            <LinearLayout android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@mipmap/ic_launcher"
-                android:background="@drawable/border"/>
+                android:orientation="vertical"
+                android:background="@drawable/border">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_launcher"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" ???"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
         </TableRow>
         <TableRow>
 
-            <ImageView
+            <LinearLayout android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@mipmap/ic_launcher"
-                android:background="@drawable/border"/>
-            <ImageView
+                android:orientation="vertical"
+                android:background="@drawable/border">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_launcher"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" ???"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+            <LinearLayout android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@mipmap/ic_launcher"
-                android:background="@drawable/border"/>
-            <ImageView
+                android:orientation="vertical"
+                android:background="@drawable/border">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_launcher"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" ???"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+            <LinearLayout android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@mipmap/ic_launcher"
-                android:background="@drawable/border"/>
-            <ImageView
+                android:orientation="vertical"
+                android:background="@drawable/border">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_launcher"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" ???"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+            <LinearLayout android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@mipmap/ic_launcher"
-                android:background="@drawable/border"/>
-            <ImageView
+                android:orientation="vertical"
+                android:background="@drawable/border">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_launcher"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" ???"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+            <LinearLayout android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@mipmap/ic_launcher"
-                android:background="@drawable/border"/>
+                android:orientation="vertical"
+                android:background="@drawable/border">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_launcher"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" ???"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
         </TableRow>
         <TableRow>
 
-            <ImageView
+            <LinearLayout android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@mipmap/ic_launcher"
-                android:background="@drawable/border"/>
-            <ImageView
+                android:orientation="vertical"
+                android:background="@drawable/border">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_launcher"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" ???"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+            <LinearLayout android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@mipmap/ic_launcher"
-                android:background="@drawable/border"/>
-            <ImageView
+                android:orientation="vertical"
+                android:background="@drawable/border">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_launcher"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" ???"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+            <LinearLayout android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@mipmap/ic_launcher"
-                android:background="@drawable/border"/>
-            <ImageView
+                android:orientation="vertical"
+                android:background="@drawable/border">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_launcher"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" ???"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+            <LinearLayout android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@mipmap/ic_launcher"
-                android:background="@drawable/border"/>
-            <ImageView
+                android:orientation="vertical"
+                android:background="@drawable/border">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_launcher"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" ???"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+            <LinearLayout android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@mipmap/ic_launcher"
-                android:background="@drawable/border"/>
+                android:orientation="vertical"
+                android:background="@drawable/border">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_launcher"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" ???"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
         </TableRow>
         <TableRow>
 
-            <ImageView
+            <LinearLayout android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@mipmap/ic_launcher"
-                android:background="@drawable/border"/>
-            <ImageView
+                android:orientation="vertical"
+                android:background="@drawable/border">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_launcher"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" ???"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+            <LinearLayout android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@mipmap/ic_launcher"
-                android:background="@drawable/border"/>
-            <ImageView
+                android:orientation="vertical"
+                android:background="@drawable/border">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_launcher"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" ???"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+            <LinearLayout android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@mipmap/ic_launcher"
-                android:background="@drawable/border"/>
-            <ImageView
+                android:orientation="vertical"
+                android:background="@drawable/border">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_launcher"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" ???"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+            <LinearLayout android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@mipmap/ic_launcher"
-                android:background="@drawable/border"/>
-            <ImageView
+                android:orientation="vertical"
+                android:background="@drawable/border">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_launcher"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" ???"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+            <LinearLayout android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@mipmap/ic_launcher"
-                android:background="@drawable/border"/>
+                android:orientation="vertical"
+                android:background="@drawable/border">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_launcher"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" ???"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
         </TableRow>
     </TableLayout>
     <Button
