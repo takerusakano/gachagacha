@@ -17,9 +17,9 @@
         android:textSize="30dp"
         android:layout_marginRight="10dp"/>
     <ImageView
+        android:id="@+id/coin"
         android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:src="@drawable/coin1" />
+        android:layout_height="30dp" />
     <ImageView
         android:layout_width="30dp"
         android:layout_height="30dp"
