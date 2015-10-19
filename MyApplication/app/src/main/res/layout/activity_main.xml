@@ -1,104 +1,103 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/blue"
-        android:orientation="vertical">
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="right">
 
-        <LinearLayout
-            android:layout_width="match_parent"
+        <TextView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:gravity="right">
+            android:layout_marginRight="10dp"
+            android:text="0:00"
+            android:textColor="@color/white"
+            android:textSize="30dp" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="10dp"
-                android:text="0:00"
-                android:textColor="@color/white"
-                android:textSize="30dp" />
+        <ImageView
+            android:id="@+id/coin"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
 
-            <ImageView
-                android:id="@+id/coin"
-                android:layout_width="30dp"
-                android:layout_height="30dp" />
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/coin1" />
 
-            <ImageView
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:src="@drawable/coin1" />
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/coin1" />
+    </LinearLayout>
 
-            <ImageView
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:src="@drawable/coin1" />
-        </LinearLayout>
-
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="30dp"
+        android:layout_weight="6">
 
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_margin="30dp"
-            android:layout_weight="6"
+            android:layout_height="match_parent"
             android:src="@drawable/gachagacha" />
 
-        <Button
-            android:id="@+id/start_button"
-            android:layout_width="wrap_content"
-            android:layout_height="0dp"
+        <ImageView
+            android:id="@+id/cap"
+            android:layout_width="120dp"
+            android:layout_height="220dp"
+            android:layout_marginTop="-50dp"
+            android:layout_gravity="center"/>
+
+        <ImageView
+            android:id="@+id/rotate"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             android:layout_gravity="center"
-            android:layout_marginBottom="10dp"
-            android:layout_weight="0.8"
-            android:background="@drawable/corner_round"
-            android:paddingLeft="50dp"
-            android:paddingRight="50dp"
-            android:text="gacharu" />
+            android:layout_marginRight="33dp"
+            android:layout_marginTop="100dp" />
 
-        <Button
-            android:id="@+id/collection_button"
-            android:layout_width="wrap_content"
-            android:layout_height="0dp"
+        <ImageView
+            android:id="@+id/gacha"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
             android:layout_gravity="center"
-            android:layout_marginBottom="10dp"
-            android:layout_weight="0.8"
-            android:background="@drawable/corner_round"
-            android:paddingLeft="59dp"
-            android:paddingRight="59dp"
-            android:text="zukan" />
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="140dp"
+            android:src="@drawable/other_gacha02_01" />
+    </FrameLayout>
 
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="right"
-            android:src="@android:drawable/ic_menu_help" />
-    </LinearLayout>
+    <Button
+        android:id="@+id/start_button"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="0.8"
+        android:background="@drawable/corner_round"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:text="gacharu" />
 
-    <ImageView
-        android:id="@+id/cap"
-        android:layout_width="260dp"
-        android:layout_height="310dp"
+    <Button
+        android:id="@+id/collection_button"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
         android:layout_gravity="center"
-        android:layout_marginTop="-130dp"/>
+        android:layout_marginBottom="10dp"
+        android:layout_weight="0.8"
+        android:background="@drawable/corner_round"
+        android:paddingLeft="59dp"
+        android:paddingRight="59dp"
+        android:text="zukan" />
 
-    <ImageView
-        android:id="@+id/rotate"
-        android:layout_width="89dp"
-        android:layout_height="89dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="100dp"
-        android:layout_marginRight="33dp"/>
-    <ImageView
-        android:id="@+id/gacha"
-        android:layout_width="130dp"
-        android:layout_height="130dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="140dp"
-        android:layout_marginLeft="110dp"
-        android:src="@drawable/other_gacha02_01"/>
-</FrameLayout>
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:src="@android:drawable/ic_menu_help" />
+</LinearLayout>
