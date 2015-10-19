@@ -93,4 +93,12 @@
         android:layout_gravity="center"
         android:layout_marginTop="100dp"
         android:layout_marginRight="33dp"/>
+    <ImageView
+        android:id="@+id/gacha"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="140dp"
+        android:layout_marginLeft="110dp"
+        android:src="@drawable/other_gacha02_01"/>
 </FrameLayout>
