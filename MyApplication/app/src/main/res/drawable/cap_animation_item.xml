@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+        <item android:drawable="@drawable/cap1" android:duration="80" />
+        <item android:drawable="@drawable/cap2" android:duration="80" />
+        <item android:drawable="@drawable/cap3" android:duration="80" />
+        <item android:drawable="@drawable/cap4" android:duration="80" />
+        <item android:drawable="@drawable/cap3" android:duration="80" />
+        <item android:drawable="@drawable/cap2" android:duration="80" />
+
+</animation-list>
