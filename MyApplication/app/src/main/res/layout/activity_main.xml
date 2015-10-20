@@ -1,25 +1,103 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:fitsSystemWindows="true"
-    tools:context=".MainActivity">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    android:orientation="vertical">
 
-    <android.support.design.widget.AppBarLayout android:layout_height="wrap_content"
-        android:layout_width="match_parent" android:theme="@style/AppTheme.AppBarOverlay">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="right">
 
-        <android.support.v7.widget.Toolbar android:id="@+id/toolbar"
-            android:layout_width="match_parent" android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary" app:popupTheme="@style/AppTheme.PopupOverlay" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="0:00"
+            android:textColor="@color/white"
+            android:textSize="30dp" />
 
-    </android.support.design.widget.AppBarLayout>
+        <ImageView
+            android:id="@+id/coin"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
 
-    <include layout="@layout/content_main" />
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/coin1" />
 
-    <android.support.design.widget.FloatingActionButton android:id="@+id/fab"
-        android:layout_width="wrap_content" android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end" android:layout_margin="@dimen/fab_margin"
-        android:src="@android:drawable/ic_dialog_email" />
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/coin1" />
+    </LinearLayout>
 
-</android.support.design.widget.CoordinatorLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="30dp"
+        android:layout_weight="6">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/gachagacha" />
+
+        <ImageView
+            android:id="@+id/cap"
+            android:layout_width="120dp"
+            android:layout_height="220dp"
+            android:layout_marginTop="-50dp"
+            android:layout_gravity="center"/>
+
+        <ImageView
+            android:id="@+id/rotate"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="33dp"
+            android:layout_marginTop="100dp" />
+
+        <ImageView
+            android:id="@+id/gacha"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="140dp"
+            android:src="@drawable/other_gacha02_01" />
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/start_button"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="0.8"
+        android:background="@drawable/corner_round"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:text="gacharu" />
+
+    <Button
+        android:id="@+id/collection_button"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="0.8"
+        android:background="@drawable/corner_round"
+        android:paddingLeft="59dp"
+        android:paddingRight="59dp"
+        android:text="zukan" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:src="@android:drawable/ic_menu_help" />
+</LinearLayout>
