@@ -45,6 +45,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
         RotateAnimation rotate = new RotateAnimation(0, -180, v.getWidth() / 2, v.getHeight() / 2); // imgの中心を軸に、0度から180度にかけて回転
         rotate.setDuration(3000);
         set.addAnimation(rotate);
+        set.setFillAfter(true);
         v.startAnimation(set); // アニメーション適用
     }
 
@@ -90,7 +91,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
         } else if (v == mStartButton) {
             timer = new Timer();
             frameAnimation(mCoin);
-            timer.schedule(new MyTimer2(), 500);
+            timer.schedule(new MyTimer2(), 200);
         }
     }
 
@@ -119,7 +120,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
             handle.post(new Runnable() {
                 @Override
                 public void run() {
-                    timer.schedule(new MyTimer(), 3000);
+                    timer.schedule(new MyTimer(), 2000);
                     mCoin.setVisibility(View.INVISIBLE);
                     frameAnimation(mCap);
                     frameAnimation(mRotate);
