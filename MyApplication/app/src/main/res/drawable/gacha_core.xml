@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/gachagacha"></item>
+    <item
+        android:id="@+id/cap"
+        android:width="350dp"
+        android:height="380dp"
+        android:bottom="130dp"
+        android:drawable="@drawable/cap_animation_item"
+        android:gravity="center"
+        android:left="10dp"></item>
+    <item
+        android:id="@+id/rotate"
+        android:width="130dp"
+        android:height="130dp"
+        android:bottom="60dp"
+        android:drawable="@drawable/rotate_animation_item"
+        android:gravity="center|bottom"
+        android:right="80dp"></item>
+    <item
+        android:id="@+id/gacha"
+        android:width="190dp"
+        android:height="190dp"
+        android:gravity="bottom|right"
+        android:right="30dp"
+        android:drawable="@drawable/other_gacha02_01"></item>
+
+</layer-list>

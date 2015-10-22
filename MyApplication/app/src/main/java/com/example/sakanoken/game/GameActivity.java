@@ -16,7 +16,7 @@ import java.util.ArrayList;
 import java.util.Timer;
 import java.util.TimerTask;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+public class GameActivity extends AppCompatActivity implements View.OnClickListener {
 
     private Button mCollectionButton;
     private ImageView mCoin;
@@ -27,6 +27,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Timer timer = null;
     private Handler handle = new Handler();
     private ArrayList<AnimationDrawable> anim = new ArrayList<>();
+    private int count;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,7 +42,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         ScaleAnimation scale = new ScaleAnimation(1, 2f, 1, 2f); // imgを1倍から2倍に拡大
         scale.setDuration(3000); // 3000msかけてアニメーションする
         set.addAnimation(scale);
-        RotateAnimation rotate = new RotateAnimation(0, -180, v.getWidth()/2, v.getHeight()/2); // imgの中心を軸に、0度から180度にかけて回転
+        RotateAnimation rotate = new RotateAnimation(0, -180, v.getWidth() / 2, v.getHeight() / 2); // imgの中心を軸に、0度から180度にかけて回転
         rotate.setDuration(3000);
         set.addAnimation(rotate);
         v.startAnimation(set); // アニメーション適用
@@ -49,21 +50,21 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     void frameAnimation(View v) {
 
-        if(v == mCoin) {
+        if (v == mCoin) {
             v.setBackgroundResource(R.drawable.coin_animation_item);
-        } else if(v == mCap) {
+        } else if (v == mCap) {
             v.setBackgroundResource(R.drawable.cap_animation_item);
         } else {
-          v.setBackgroundResource(R.drawable.rotate_animation_item);
+            v.setBackgroundResource(R.drawable.rotate_animation_item);
         }
 
         anim.add((AnimationDrawable) v.getBackground());
 
         // 繰り返し設定
-        anim.get(anim.size()-1).setOneShot(false);
+        anim.get(anim.size() - 1).setOneShot(false);
 
         // アニメーション開始
-        anim.get(anim.size()-1).start();
+        anim.get(anim.size() - 1).start();
     }
 
     private void findviews() {
@@ -86,12 +87,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if (v == mCollectionButton) {
             intent = new Intent(this, Collection.class);
             startActivity(intent);
-        } else if (v == mStartButton){
+        } else if (v == mStartButton) {
             timer = new Timer();
-            timer.schedule(new MyTimer(), 3000);
             frameAnimation(mCoin);
-            frameAnimation(mCap);
-            frameAnimation(mRotate);
+            timer.schedule(new MyTimer2(), 500);
         }
     }
 
@@ -105,7 +104,25 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     for (AnimationDrawable a : anim) {
                         a.stop();
                     }
+                    mGacha.setImageResource(R.drawable.other_gacha02_01);
                     scaleAnimation(mGacha);
+                    count++;
+                }
+            });
+        }
+    }
+
+    class MyTimer2 extends TimerTask {
+
+        @Override
+        public void run() {
+            handle.post(new Runnable() {
+                @Override
+                public void run() {
+                    timer.schedule(new MyTimer(), 3000);
+                    mCoin.setVisibility(View.INVISIBLE);
+                    frameAnimation(mCap);
+                    frameAnimation(mRotate);
                 }
             });
         }

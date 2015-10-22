@@ -5,37 +5,43 @@
     android:background="@color/blue"
     android:orientation="vertical">
 
-    <LinearLayout
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:gravity="right">
+        android:layout_height="wrap_content">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="right">
+
+            <ImageView
+                android:id="@+id/coin"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/coin1" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/coin1" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/coin1" />
+        </LinearLayout>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="10dp"
             android:text="0:00"
             android:textColor="@color/white"
-            android:textSize="30dp" />
+            android:textSize="30dp"
+            android:layout_gravity="center"/>
+    </FrameLayout>
 
-        <ImageView
-            android:id="@+id/coin"
-            android:layout_width="30dp"
-            android:layout_height="30dp" />
-
-        <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:src="@drawable/coin1" />
-
-        <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:src="@drawable/coin1" />
-    </LinearLayout>
-
-    <FrameLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_margin="30dp"
@@ -49,27 +55,18 @@
         <ImageView
             android:id="@+id/cap"
             android:layout_width="120dp"
-            android:layout_height="220dp"
-            android:layout_marginTop="-50dp"
-            android:layout_gravity="center"/>
+            android:layout_height="220dp" />
 
         <ImageView
             android:id="@+id/rotate"
             android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:layout_gravity="center"
-            android:layout_marginRight="33dp"
-            android:layout_marginTop="100dp" />
+            android:layout_height="60dp" />
 
         <ImageView
             android:id="@+id/gacha"
             android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_gravity="center"
-            android:layout_marginLeft="110dp"
-            android:layout_marginTop="140dp"
-            android:src="@drawable/other_gacha02_01" />
-    </FrameLayout>
+            android:layout_height="80dp" />
+    </RelativeLayout>
 
     <Button
         android:id="@+id/start_button"
