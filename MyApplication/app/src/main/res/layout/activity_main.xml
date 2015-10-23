@@ -10,10 +10,10 @@
         android:layout_height="wrap_content">
 
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:gravity="right">
+            android:layout_gravity="right">
 
             <ImageView
                 android:id="@+id/coin"
@@ -32,11 +32,13 @@
                 android:src="@drawable/coin1" />
         </LinearLayout>
         <TextView
+            android:id="@+id/timer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="0:00"
             android:textColor="@color/white"
-            android:textSize="30dp"
+            android:textSize="30sp"
+            android:layout_marginTop="5dp"
             android:paddingRight="10dp"
             android:paddingLeft="10dp"
             android:layout_gravity="center"
@@ -56,24 +58,25 @@
 
         <ImageView
             android:id="@+id/cap"
-            android:layout_width="160dp"
-            android:layout_height="220dp"
+            android:layout_width="150dp"
+            android:layout_height="157dp"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="55dp"/>
+            android:layout_marginTop="48dp"/>
 
         <ImageView
             android:id="@+id/rotate"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
             android:layout_below="@+id/cap"
-            android:layout_centerHorizontal="true"/>
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="105dp"/>
 
         <ImageView
             android:id="@+id/gacha"
             android:layout_width="80dp"
             android:layout_height="80dp"
-            android:layout_centerHorizontal="true"
-            android:layout_alignBottom="@+id/rotate" />
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="160dp" />
     </RelativeLayout>
 
     <Button

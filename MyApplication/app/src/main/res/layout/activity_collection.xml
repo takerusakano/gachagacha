@@ -10,7 +10,7 @@
         android:gravity="center"
         android:text="collection"
         android:textSize="50sp"
-        android:layout_marginTop="30dp"/>
+        android:layout_marginTop="30sp"/>
 
     <FrameLayout
         android:layout_width="match_parent"
